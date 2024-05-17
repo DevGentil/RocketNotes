@@ -1,19 +1,16 @@
-import styled from 'styled-components';
+import { Container, Profile } from './styles';
 
-export const Container = styled.header`
-    grid-area: header;
+export function Header() {
+    return (
+        <Container>
+            <Profile>
+                <img src="https://github.com/devgentil.png" alt="DevGentil" />
+            </Profile>
 
-    height: 105px;
-    width: 100%;
-
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
-
-    display: flex;
-    justify-content: space-between;
-
-    padding: 0 80px;
-    
-    background: red;
-`;
+            <div>
+                <span>Bem-vindo</span>
+                <strong>DevGentil</strong>
+            </div>
+        </Container>
+    );
+};
