@@ -16,10 +16,8 @@ export function Profile() {
 
       <Form>
         <Avatar>
-          <img
-            src="https://github.com/devgentil.png"
-            alt="Foto do usuário"
-          />
+          <img src="https://github.com/devgentil.png" alt="Foto do usuário" />
+          
           <label htmlFor="avatar">
             <FiCamera />
 
